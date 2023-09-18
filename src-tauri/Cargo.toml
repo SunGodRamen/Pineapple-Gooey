@@ -1,10 +1,10 @@
 [package]
-name = "app"
+name = "pineapple"
 version = "0.1.0"
-description = "A Tauri App"
-authors = ["you"]
-license = ""
-repository = ""
+description = "An interface for the Pineapple Context System"
+authors = ["ra"]
+license = "license? we don't need no stinkin' license"
+repository = "https://github.com/SunGodRamen/Pineapple-Gooey"
 default-run = "app"
 edition = "2021"
 rust-version = "1.60"
@@ -12,12 +12,12 @@ rust-version = "1.60"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [build-dependencies]
-tauri-build = { version = "1.4.0" }
+tauri-build = { version = "1.4.0", features = [] }
 
 [dependencies]
 serde_json = "1.0"
 serde = { version = "1.0", features = ["derive"] }
-tauri = { version = "1.4.0" }
+tauri = { version = "1.4.0", features = [] }
 
 [features]
 # this feature is used for production builds or when `devPath` points to the filesystem and the built-in dev server is disabled.
